@@ -3,7 +3,7 @@ pip install torch torchvision
 git clone https://github.com/NVIDIA/apex
 cd apex/
 pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" .
-cd ../'tacotron2/
+cd ../tacotron2/
 git submodule init; git submodule update
 pip install -r requirements.txt
 py_dir=/content/gdrive/My\ Drive/Research/data/pytorch-Tacotron/
