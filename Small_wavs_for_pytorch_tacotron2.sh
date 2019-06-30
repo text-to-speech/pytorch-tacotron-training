@@ -6,6 +6,8 @@ pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cud
 cd ../tacotron2/
 git submodule init; git submodule update
 pip install -r requirements.txt
+pip uninstall protobuf
+pip install --no-binary=protobuf protobuf
 py_dir=/content/gdrive/My\ Drive/Research/data/pytorch-Tacotron/
 outdir='${py_dir}output/'
 logdir='${py_dir}log/'
